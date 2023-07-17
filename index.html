@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <div class="show">
+          <div class="states">
+            <span style="color: #fff">09:41:45</span>
+
+            <img src="images/states.jpg" alt="" />
+          </div>
+          <h1 id="result" class="result">0</h1>
+        </div>
+        <div class="inputs">
+          <button class="btn btn-light" onclick="clean()">AC</button>
+          <button class="btn btn-light">+-</button>
+          <button class="btn btn-light">%</button>
+          <button class="btn btn-yellow" onclick="setOperator('/')">/</button>
+          <button class="btn btn-dark" onclick="setNumber('7')">7</button>
+          <button class="btn btn-dark" onclick="setNumber('8')">8</button>
+          <button class="btn btn-dark" onclick="setNumber('9')">9</button>
+          <button class="btn btn-yellow" onclick="setOperator('*')">X</button>
+          <button class="btn btn-dark" onclick="setNumber('4')">4</button>
+          <button class="btn btn-dark" onclick="setNumber('5')">5</button>
+          <button class="btn btn-dark" onclick="setNumber('6')">6</button>
+          <button class="btn btn-yellow" onclick="setOperator('-')">-</button>
+          <button class="btn btn-dark" onclick="setNumber('1')">1</button>
+          <button class="btn btn-dark" onclick="setNumber('2')">2</button>
+          <button class="btn btn-dark" onclick="setNumber('3')">3</button>
+          <button class="btn btn-yellow" onclick="setOperator('+')">+</button>
+          <button class="btn btn-dark zero" onclick="setNumber('0')">0</button>
+          <button class="btn btn-dark">,</button>
+          <button class="btn btn-yellow" onclick="resulting()">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
